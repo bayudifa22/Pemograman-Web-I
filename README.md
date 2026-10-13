@@ -305,8 +305,3 @@ Pada elemen HTML yang memiliki atribut `data-wa-trigger`, Anda dapat langsung me
 
 ### Menambah Desain Baru di Galeri Koleksi
 Cukup tambahkan elemen kartu baru di dalam kontainer `<div id="collection-grid">` pada file `index.html` dengan menyertakan atribut `data-category`, `data-title`, `data-desc`, dan `data-img`.
-
----
-
-## 📝 Lisensi
-Proyek ini dibuat untuk keperluan akademik dan portfolio pribadi. Bebas dikembangkan dan dimodifikasi lebih lanjut.
