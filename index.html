@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="id">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Momen Bareng — Undangan Digital Personal &amp; Berkesan</title>
-  <meta content="Jasa pembuatan undangan digital elegan, modern, dan personal untuk pernikahan, lamaran, ulang tahun, aqiqah, dan momen spesial lainnya." name="description"/>
-  
+  <meta
+    content="Jasa pembuatan undangan digital elegan, modern, dan personal untuk pernikahan, lamaran, ulang tahun, aqiqah, dan momen spesial lainnya."
+    name="description" />
+
   <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-  
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
+
   <!-- Tailwind Configuration -->
   <script>
     tailwind.config = {
@@ -49,20 +54,24 @@
   <!-- Custom Styles: Accessibility, Reveal & Scrollbar -->
   <style>
     @media (prefers-reduced-motion: reduce) {
-      *, ::before, ::after {
+
+      *,
+      ::before,
+      ::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
-    
+
     .reveal-item {
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
       will-change: opacity, transform;
     }
+
     .reveal-item.is-visible {
       opacity: 1;
       transform: translateY(0);
@@ -73,13 +82,16 @@
       width: 7px;
       height: 7px;
     }
+
     ::-webkit-scrollbar-track {
       background: #FAF7F2;
     }
+
     ::-webkit-scrollbar-thumb {
       background: #C99D96;
       border-radius: 4px;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: #49372F;
     }
@@ -87,48 +99,69 @@
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
+
     .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
   </style>
 </head>
-<body class="bg-ivory text-deep-brown font-sans antialiased selection:bg-dusty-rose selection:text-white relative overflow-x-hidden">
+
+<body
+  class="bg-ivory text-deep-brown font-sans antialiased selection:bg-dusty-rose selection:text-white relative overflow-x-hidden">
 
   <!-- ==================== A. NAVBAR ==================== -->
-  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-ivory/80 backdrop-blur-md border-b border-subtle-border" id="main-header">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-ivory/80 backdrop-blur-md border-b border-subtle-border"
+    id="main-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18 sm:h-20">
         <!-- Logo / Wordmark -->
-        <a aria-label="Momen Bareng Beranda" class="group flex items-center gap-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold rounded-lg p-1" href="#beranda">
-          <div class="w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-soft-beige flex items-center justify-center text-muted-gold border border-muted-gold/30 group-hover:scale-105 transition-transform flex-shrink-0">
+        <a aria-label="Momen Bareng Beranda"
+          class="group flex items-center gap-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold rounded-lg p-1"
+          href="#beranda">
+          <div
+            class="w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-soft-beige flex items-center justify-center text-muted-gold border border-muted-gold/30 group-hover:scale-105 transition-transform flex-shrink-0">
             <i class="w-4 h-4" data-lucide="sparkles"></i>
           </div>
           <div class="flex flex-col">
-            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-deep-brown leading-none">momen bareng</span>
-            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-deep-brown/60 font-medium mt-0.5">Digital Invitation</span>
+            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-deep-brown leading-none">KELOMPOK TIGA</span>
+            <span
+              class="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-deep-brown/60 font-medium mt-0.5">Digital
+              Invitation</span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links (Laptop & Large Screens) -->
-        <nav aria-label="Navigasi Utama" class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium text-deep-brown/80">
-          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1" href="#beranda">Beranda</a>
-          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1" href="#tentang-kami">Tentang Kami</a>
-          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1" href="#layanan">Layanan</a>
-          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1" href="#koleksi">Koleksi</a>
-          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1" href="#cara-pemesanan">Cara Pemesanan</a>
-          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1" href="#faq">FAQ</a>
+        <nav aria-label="Navigasi Utama"
+          class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium text-deep-brown/80">
+          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1"
+            href="#beranda">Beranda</a>
+          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1"
+            href="#tentang-kami">Tentang Kami</a>
+          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1"
+            href="#layanan">Layanan</a>
+          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1"
+            href="#koleksi">Koleksi</a>
+          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1"
+            href="#cara-pemesanan">Cara Pemesanan</a>
+          <a class="nav-link hover:text-deep-brown transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-muted-gold py-1"
+            href="#faq">FAQ</a>
         </nav>
 
         <!-- CTA & Mobile Trigger -->
         <div class="flex items-center gap-3 sm:gap-4">
-          <button class="hidden sm:inline-flex items-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs tracking-wider uppercase font-semibold transition-all shadow-sm hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold active:scale-95" data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi dan pesan undangan digital.">
+          <button
+            class="hidden sm:inline-flex items-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs tracking-wider uppercase font-semibold transition-all shadow-sm hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold active:scale-95"
+            data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi dan pesan undangan digital.">
             <span>Pesan Undangan</span>
             <i class="w-3.5 h-3.5" data-lucide="arrow-up-right"></i>
           </button>
-          
+
           <!-- Mobile Hamburger Toggle Button -->
-          <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Buka menu navigasi" class="md:hidden p-2 text-deep-brown hover:text-dusty-rose rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold" id="mobile-menu-btn" type="button">
+          <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Buka menu navigasi"
+            class="md:hidden p-2 text-deep-brown hover:text-dusty-rose rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold"
+            id="mobile-menu-btn" type="button">
             <i class="w-6 h-6" data-lucide="menu" id="hamburger-icon"></i>
           </button>
         </div>
@@ -136,15 +169,24 @@
     </div>
 
     <!-- Mobile Drawer Navigation (Phone / Small Screen) -->
-    <div class="hidden md:hidden bg-ivory border-b border-subtle-border px-5 sm:px-6 pt-3 pb-6 space-y-3 shadow-lg" id="mobile-menu">
-      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40" href="#beranda">Beranda</a>
-      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40" href="#tentang-kami">Tentang Kami</a>
-      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40" href="#layanan">Layanan</a>
-      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40" href="#koleksi">Koleksi</a>
-      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40" href="#cara-pemesanan">Cara Pemesanan</a>
-      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose" href="#faq">FAQ</a>
+    <div class="hidden md:hidden bg-ivory border-b border-subtle-border px-5 sm:px-6 pt-3 pb-6 space-y-3 shadow-lg"
+      id="mobile-menu">
+      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40"
+        href="#beranda">Beranda</a>
+      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40"
+        href="#tentang-kami">Tentang Kami</a>
+      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40"
+        href="#layanan">Layanan</a>
+      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40"
+        href="#koleksi">Koleksi</a>
+      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose border-b border-subtle-border/40"
+        href="#cara-pemesanan">Cara Pemesanan</a>
+      <a class="mobile-nav-link block py-2 text-base font-medium text-deep-brown hover:text-dusty-rose"
+        href="#faq">FAQ</a>
       <div class="pt-2">
-        <button class="w-full flex items-center justify-center gap-2 bg-deep-brown text-ivory py-3 rounded-full text-xs uppercase tracking-wider font-semibold active:scale-98 transition-all" data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi dan pesan undangan digital.">
+        <button
+          class="w-full flex items-center justify-center gap-2 bg-deep-brown text-ivory py-3 rounded-full text-xs uppercase tracking-wider font-semibold active:scale-98 transition-all"
+          data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi dan pesan undangan digital.">
           <span>Pesan Undangan via WhatsApp</span>
           <i class="w-4 h-4" data-lucide="arrow-up-right"></i>
         </button>
@@ -156,41 +198,54 @@
     <!-- ==================== B. HERO SECTION ==================== -->
     <section class="relative pt-28 pb-16 sm:pt-36 sm:pb-24 md:pt-40 md:pb-28 overflow-hidden" id="beranda">
       <!-- Decorative Backdrop Elements -->
-      <div class="absolute top-1/4 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-soft-beige/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-      <div class="absolute bottom-10 left-10 w-60 sm:w-72 h-60 sm:h-72 bg-dusty-rose/15 rounded-full blur-2xl -z-10 pointer-events-none"></div>
+      <div
+        class="absolute top-1/4 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-soft-beige/60 rounded-full blur-3xl -z-10 pointer-events-none">
+      </div>
+      <div
+        class="absolute bottom-10 left-10 w-60 sm:w-72 h-60 sm:h-72 bg-dusty-rose/15 rounded-full blur-2xl -z-10 pointer-events-none">
+      </div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-          
+
           <!-- Hero Copy Left (Mobile friendly & Laptop wide) -->
           <div class="lg:col-span-7 reveal-item">
-            <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-soft-beige/70 border border-muted-gold/20 mb-5 sm:mb-6 text-[10px] sm:text-xs uppercase tracking-widest text-deep-brown font-semibold max-w-full">
+            <div
+              class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-soft-beige/70 border border-muted-gold/20 mb-5 sm:mb-6 text-[10px] sm:text-xs uppercase tracking-widest text-deep-brown font-semibold max-w-full">
               <span class="w-1.5 h-1.5 rounded-full bg-muted-gold flex-shrink-0"></span>
               <span class="truncate">YOUR SPECIAL MOMENTS, OUR DIGITAL TOUCH</span>
             </div>
 
-            <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-deep-brown leading-[1.12] sm:leading-[1.08] mb-5 sm:mb-6">
-              Rayakan Momen Spesialmu, dengan Cara yang <span class="italic font-normal text-muted-gold">Lebih Berkesan.</span>
+            <h1
+              class="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-deep-brown leading-[1.12] sm:leading-[1.08] mb-5 sm:mb-6">
+              Rayakan Momen Spesialmu, dengan Cara yang <span class="italic font-normal text-muted-gold">Lebih
+                Berkesan.</span>
             </h1>
 
-            <p class="text-sm sm:text-base md:text-lg text-deep-brown/80 leading-relaxed max-w-2xl mb-6 sm:mb-8 font-light">
-              Dari kisah cinta hingga perayaan penuh kebahagiaan, kami hadir membantu mengabadikan momenmu melalui undangan digital yang indah, personal, dan mudah dibagikan.
+            <p
+              class="text-sm sm:text-base md:text-lg text-deep-brown/80 leading-relaxed max-w-2xl mb-6 sm:mb-8 font-light">
+              Dari kisah cinta hingga perayaan penuh kebahagiaan, kami hadir membantu mengabadikan momenmu melalui
+              undangan digital yang indah, personal, dan mudah dibagikan.
             </p>
 
             <!-- Responsive Buttons (Stacked on small screens, Inline on tablet/desktop) -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-              <a class="inline-flex items-center justify-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs uppercase tracking-widest font-semibold transition-all shadow-md hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold text-center" href="#koleksi">
+              <a class="inline-flex items-center justify-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs uppercase tracking-widest font-semibold transition-all shadow-md hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold text-center"
+                href="#koleksi">
                 <span>Temukan Undanganmu</span>
                 <i class="w-4 h-4" data-lucide="compass"></i>
               </a>
-              <button class="inline-flex items-center justify-center gap-2 bg-transparent border border-deep-brown/30 hover:border-deep-brown text-deep-brown px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs uppercase tracking-widest font-semibold hover:bg-soft-beige/40 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold text-center" data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi gratis mengenai desain undangan digital.">
+              <button
+                class="inline-flex items-center justify-center gap-2 bg-transparent border border-deep-brown/30 hover:border-deep-brown text-deep-brown px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs uppercase tracking-widest font-semibold hover:bg-soft-beige/40 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold text-center"
+                data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi gratis mengenai desain undangan digital.">
                 <span>Konsultasi Gratis</span>
                 <i class="w-4 h-4 text-muted-gold" data-lucide="message-circle"></i>
               </button>
             </div>
 
             <!-- Value Chips Under Hero (3 columns on all devices with proportional typography) -->
-            <div class="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-subtle-border grid grid-cols-3 gap-2 sm:gap-4 text-left">
+            <div
+              class="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-subtle-border grid grid-cols-3 gap-2 sm:gap-4 text-left">
               <div>
                 <p class="font-serif text-xl sm:text-2xl font-bold text-deep-brown">100%</p>
                 <p class="text-[11px] sm:text-xs text-deep-brown/70 mt-0.5 leading-snug">Mobile Friendly</p>
@@ -209,8 +264,10 @@
           <!-- Hero Visual Right (5 cols): Responsive Editorial Smartphone Mockup -->
           <div class="lg:col-span-5 relative flex justify-center lg:justify-end reveal-item mt-4 lg:mt-0">
             <!-- Atmospheric Badge Floating (Responsive position and width) -->
-            <div class="absolute -top-3 left-0 sm:-top-4 sm:-left-4 z-20 bg-ivory/95 backdrop-blur-md p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl shadow-soft-card border border-subtle-border flex items-center gap-2.5 sm:gap-3 max-w-[85vw] sm:max-w-none">
-              <div class="w-8 sm:w-10 h-8 sm:h-10 rounded-lg sm:rounded-xl bg-dusty-rose/20 text-dusty-rose flex items-center justify-center flex-shrink-0">
+            <div
+              class="absolute -top-3 left-0 sm:-top-4 sm:-left-4 z-20 bg-ivory/95 backdrop-blur-md p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl shadow-soft-card border border-subtle-border flex items-center gap-2.5 sm:gap-3 max-w-[85vw] sm:max-w-none">
+              <div
+                class="w-8 sm:w-10 h-8 sm:h-10 rounded-lg sm:rounded-xl bg-dusty-rose/20 text-dusty-rose flex items-center justify-center flex-shrink-0">
                 <i class="w-4 sm:w-5 h-4 sm:h-5" data-lucide="heart"></i>
               </div>
               <div class="min-w-0">
@@ -220,41 +277,57 @@
             </div>
 
             <!-- Audio Feature Float Badge -->
-            <div class="absolute -bottom-3 right-0 sm:-bottom-4 sm:-right-2 z-20 bg-ivory/95 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl shadow-soft-card border border-subtle-border flex items-center gap-2 sm:gap-2.5 max-w-[85vw] sm:max-w-none">
+            <div
+              class="absolute -bottom-3 right-0 sm:-bottom-4 sm:-right-2 z-20 bg-ivory/95 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl shadow-soft-card border border-subtle-border flex items-center gap-2 sm:gap-2.5 max-w-[85vw] sm:max-w-none">
               <span class="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5 flex-shrink-0">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-muted-gold opacity-75"></span>
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-muted-gold opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-muted-gold"></span>
               </span>
-              <p class="text-[10px] sm:text-xs font-medium text-deep-brown truncate">Background Music &amp; RSVP Auto</p>
+              <p class="text-[10px] sm:text-xs font-medium text-deep-brown truncate">Background Music &amp; RSVP Auto
+              </p>
             </div>
 
             <!-- Realistic Smartphone Frame Container -->
-            <div class="relative w-[260px] xs:w-[280px] sm:w-[310px] h-[520px] sm:h-[580px] md:h-[620px] bg-deep-brown rounded-[38px] sm:rounded-[44px] p-2.5 sm:p-3 shadow-2xl border-4 border-soft-beige/80">
+            <div
+              class="relative w-[260px] xs:w-[280px] sm:w-[310px] h-[520px] sm:h-[580px] md:h-[620px] bg-deep-brown rounded-[38px] sm:rounded-[44px] p-2.5 sm:p-3 shadow-2xl border-4 border-soft-beige/80">
               <!-- Phone Notch / Island -->
-              <div class="absolute top-4 sm:top-5 left-1/2 -translate-x-1/2 w-20 sm:w-24 h-3.5 sm:h-4 bg-deep-brown rounded-full z-30"></div>
-              
+              <div
+                class="absolute top-4 sm:top-5 left-1/2 -translate-x-1/2 w-20 sm:w-24 h-3.5 sm:h-4 bg-deep-brown rounded-full z-30">
+              </div>
+
               <!-- Phone Screen Content (Live Web Simulation) -->
-              <div class="w-full h-full bg-[#FAF6F0] rounded-[30px] sm:rounded-[36px] overflow-hidden flex flex-col relative text-center select-none">
+              <div
+                class="w-full h-full bg-[#FAF6F0] rounded-[30px] sm:rounded-[36px] overflow-hidden flex flex-col relative text-center select-none">
                 <!-- Mockup Hero Photo -->
                 <div class="h-1/2 relative overflow-hidden">
-                  <img alt="Mockup undangan digital pasangan bahagia" class="w-full h-full object-cover object-center filter saturate-90 brightness-95" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                  <img alt="Mockup undangan digital pasangan bahagia"
+                    class="w-full h-full object-cover object-center filter saturate-90 brightness-95"
+                    src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
                   <div class="absolute inset-0 bg-gradient-to-t from-[#FAF6F0] via-transparent to-black/20"></div>
-                  <span class="absolute top-7 sm:top-8 left-3 sm:left-4 text-[9px] sm:text-[10px] font-mono tracking-widest text-white/90 bg-black/40 backdrop-blur-sm px-2 py-0.5 rounded">ONLINE INVITATION</span>
+                  <span
+                    class="absolute top-7 sm:top-8 left-3 sm:left-4 text-[9px] sm:text-[10px] font-mono tracking-widest text-white/90 bg-black/40 backdrop-blur-sm px-2 py-0.5 rounded">ONLINE
+                    INVITATION</span>
                 </div>
 
                 <!-- Mockup Invitation Details -->
                 <div class="p-3 sm:p-4 flex-1 flex flex-col justify-between items-center -mt-4 z-10">
                   <div>
-                    <p class="font-serif italic text-[11px] sm:text-xs text-muted-gold tracking-widest uppercase">Walimatul 'Urs</p>
-                    <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mt-0.5 sm:mt-1">Nara &amp; Raditya</h3>
-                    <p class="text-[10px] sm:text-[11px] text-deep-brown/70 mt-0.5 sm:mt-1 font-light">Sabtu, 24 Oktober 2026</p>
+                    <p class="font-serif italic text-[11px] sm:text-xs text-muted-gold tracking-widest uppercase">
+                      Walimatul 'Urs</p>
+                    <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mt-0.5 sm:mt-1">Nara &amp;
+                      Raditya</h3>
+                    <p class="text-[10px] sm:text-[11px] text-deep-brown/70 mt-0.5 sm:mt-1 font-light">Sabtu, 24 Oktober
+                      2026</p>
                     <div class="w-8 h-[1px] bg-muted-gold mx-auto my-2"></div>
-                    <p class="text-[9px] sm:text-[10px] text-deep-brown/60 px-2 line-clamp-2">Dengan penuh rasa syukur, kami mengundang Anda untuk hadir berbagi kebahagiaan.</p>
+                    <p class="text-[9px] sm:text-[10px] text-deep-brown/60 px-2 line-clamp-2">Dengan penuh rasa syukur,
+                      kami mengundang Anda untuk hadir berbagi kebahagiaan.</p>
                   </div>
 
                   <!-- Mockup Action Button -->
                   <div class="w-full space-y-1 sm:space-y-1.5 pb-1 sm:pb-2">
-                    <div class="bg-deep-brown text-ivory text-[10px] sm:text-[11px] font-medium py-1.5 sm:py-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+                    <div
+                      class="bg-deep-brown text-ivory text-[10px] sm:text-[11px] font-medium py-1.5 sm:py-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
                       <i class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-muted-gold" data-lucide="mail-open"></i>
                       <span>Buka Undangan</span>
                     </div>
@@ -274,22 +347,26 @@
     <section class="py-16 sm:py-20 md:py-28 bg-soft-beige/30 border-y border-subtle-border" id="tentang-kami">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          
+
           <!-- Editorial Images Collage (Mobile safe margins & Desktop scale) -->
           <div class="lg:col-span-5 relative reveal-item pr-3 pb-3 sm:pr-6 sm:pb-6">
             <div class="relative mx-auto max-w-sm sm:max-w-md lg:max-w-none">
               <!-- Main Photo -->
               <div class="rounded-3xl overflow-hidden shadow-soft-card border border-subtle-border aspect-[4/5]">
-                <img alt="Dekorasi stationery pernikahan elegan" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                <img alt="Dekorasi stationery pernikahan elegan" class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
               </div>
-              
+
               <!-- Overlapping Accent Photo -->
-              <div class="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-4 w-1/2 aspect-square rounded-2xl overflow-hidden shadow-hover-card border-4 border-ivory">
-                <img alt="Detail cincin pertunangan dan bunga" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+              <div
+                class="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-4 w-1/2 aspect-square rounded-2xl overflow-hidden shadow-hover-card border-4 border-ivory">
+                <img alt="Detail cincin pertunangan dan bunga" class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&amp;fit=crop&amp;w=600&amp;q=80" />
               </div>
-              
+
               <!-- Stamp Detail -->
-              <div class="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-deep-brown text-ivory flex items-center justify-center shadow-lg">
+              <div
+                class="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-deep-brown text-ivory flex items-center justify-center shadow-lg">
                 <i class="w-5 h-5 sm:w-7 sm:h-7 text-muted-gold" data-lucide="feather"></i>
               </div>
             </div>
@@ -298,21 +375,26 @@
           <!-- Editorial Copy (7 cols) -->
           <div class="lg:col-span-7 reveal-item lg:pl-6">
             <span class="text-xs uppercase tracking-widest text-muted-gold font-semibold">TENTANG MOMEN BARENG</span>
-            <h2 class="font-serif text-2xl sm:text-4xl lg:text-5xl font-medium text-deep-brown mt-2 sm:mt-3 mb-4 sm:mb-6 leading-tight">
+            <h2
+              class="font-serif text-2xl sm:text-4xl lg:text-5xl font-medium text-deep-brown mt-2 sm:mt-3 mb-4 sm:mb-6 leading-tight">
               Lebih dari Sekadar Undangan.
             </h2>
             <div class="space-y-4 text-deep-brown/80 text-sm sm:text-base leading-relaxed font-light">
               <p>
-                Momen Bareng lahir dari keyakinan bahwa setiap perayaan memiliki cerita istimewa yang patut dibagikan dengan hangat dan penuh penghargaan. Kami menjembatani keanggunan desain cetak klasik dengan kecanggihan teknologi digital modern.
+                Momen Bareng lahir dari keyakinan bahwa setiap perayaan memiliki cerita istimewa yang patut dibagikan
+                dengan hangat dan penuh penghargaan. Kami menjembatani keanggunan desain cetak klasik dengan kecanggihan
+                teknologi digital modern.
               </p>
               <p>
-                Melalui satu tautan praktis, Anda dapat menyuguhkan informasi lokasi dengan navigasi peta interaktif, galeri foto kisah cinta, countdown waktu, iringan musik favorit, hingga sistem RSVP dan reservasi kehadiran tamu secara real-time.
+                Melalui satu tautan praktis, Anda dapat menyuguhkan informasi lokasi dengan navigasi peta interaktif,
+                galeri foto kisah cinta, countdown waktu, iringan musik favorit, hingga sistem RSVP dan reservasi
+                kehadiran tamu secara real-time.
               </p>
               <p class="italic font-serif text-base sm:text-lg text-deep-brown pt-2 border-l-2 border-muted-gold pl-4">
                 "Setiap Momen Punya Cerita, Rayakan Bareng Momen Bareng."
               </p>
             </div>
-            
+
             <div class="mt-6 sm:mt-8 flex flex-wrap gap-4 sm:gap-6 text-xs sm:text-sm">
               <div class="flex items-center gap-2 text-deep-brown">
                 <i class="w-4 h-4 text-dusty-rose flex-shrink-0" data-lucide="check"></i>
@@ -342,29 +424,38 @@
             Layanan Undangan Digital Kami
           </h2>
           <p class="text-deep-brown/70 mt-2 sm:mt-3 text-sm sm:text-base font-light">
-            Solusi undangan website yang dirancang khusus sesuai dengan nuansa, tradisi, dan kekhasan setiap jenis acara Anda.
+            Solusi undangan website yang dirancang khusus sesuai dengan nuansa, tradisi, dan kekhasan setiap jenis acara
+            Anda.
           </p>
         </div>
 
         <!-- 6 Cards Grid (Responsive 1 col mobile, 2 col tablet, 3 col laptop) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          
+
           <!-- Card 1: Undangan Pernikahan -->
-          <article class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
+          <article
+            class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
             <div class="h-48 sm:h-52 overflow-hidden relative">
-              <img alt="Undangan Pernikahan digital Momen Bareng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-              <span class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Pernikahan</span>
+              <img alt="Undangan Pernikahan digital Momen Bareng"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+              <span
+                class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Pernikahan</span>
             </div>
             <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">Undangan Pernikahan</h3>
+                <h3
+                  class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">
+                  Undangan Pernikahan</h3>
                 <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-                  Lengkap dengan kisah cinta (love story), countdown, amplop digital, buku tamu online, musik romantis, dan galeri pre-wedding beresolusi tinggi.
+                  Lengkap dengan kisah cinta (love story), countdown, amplop digital, buku tamu online, musik romantis,
+                  dan galeri pre-wedding beresolusi tinggi.
                 </p>
               </div>
               <div class="mt-6 pt-4 border-t border-subtle-border flex items-center justify-between">
                 <span class="text-xs text-muted-gold font-medium">Fitur Lengkap &amp; RSVP</span>
-                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all" href="#koleksi">
+                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#koleksi">
                   <span>Lihat Detail</span>
                   <i class="w-4 h-4" data-lucide="chevron-right"></i>
                 </a>
@@ -373,21 +464,29 @@
           </article>
 
           <!-- Card 2: Undangan Lamaran -->
-          <article class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
+          <article
+            class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
             <div class="h-48 sm:h-52 overflow-hidden relative">
-              <img alt="Undangan Lamaran &amp; Pertunangan digital Momen Bareng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-              <span class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Lamaran</span>
+              <img alt="Undangan Lamaran &amp; Pertunangan digital Momen Bareng"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+              <span
+                class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Lamaran</span>
             </div>
             <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">Undangan Lamaran</h3>
+                <h3
+                  class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">
+                  Undangan Lamaran</h3>
                 <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-                  Desain intim dan elegan untuk prosesi pertunangan keluarga besar. Memuat susunan acara, dress code tamu, serta lokasi rumah/venue.
+                  Desain intim dan elegan untuk prosesi pertunangan keluarga besar. Memuat susunan acara, dress code
+                  tamu, serta lokasi rumah/venue.
                 </p>
               </div>
               <div class="mt-6 pt-4 border-t border-subtle-border flex items-center justify-between">
                 <span class="text-xs text-muted-gold font-medium">Hangat &amp; Intim</span>
-                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all" href="#koleksi">
+                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#koleksi">
                   <span>Lihat Detail</span>
                   <i class="w-4 h-4" data-lucide="chevron-right"></i>
                 </a>
@@ -396,21 +495,30 @@
           </article>
 
           <!-- Card 3: Undangan Ulang Tahun -->
-          <article class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
+          <article
+            class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
             <div class="h-48 sm:h-52 overflow-hidden relative">
-              <img alt="Undangan Ulang Tahun digital Momen Bareng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-              <span class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Ulang Tahun</span>
+              <img alt="Undangan Ulang Tahun digital Momen Bareng"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+              <span
+                class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Ulang
+                Tahun</span>
             </div>
             <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">Undangan Ulang Tahun</h3>
+                <h3
+                  class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">
+                  Undangan Ulang Tahun</h3>
                 <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-                  Mulai dari Sweet 17th, Kids Birthday party yang ceria, hingga Milad keluarga. Tema kustom yang playful atau glamor sesuai impian.
+                  Mulai dari Sweet 17th, Kids Birthday party yang ceria, hingga Milad keluarga. Tema kustom yang playful
+                  atau glamor sesuai impian.
                 </p>
               </div>
               <div class="mt-6 pt-4 border-t border-subtle-border flex items-center justify-between">
                 <span class="text-xs text-muted-gold font-medium">Custom Music &amp; Tema</span>
-                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all" href="#koleksi">
+                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#koleksi">
                   <span>Lihat Detail</span>
                   <i class="w-4 h-4" data-lucide="chevron-right"></i>
                 </a>
@@ -419,21 +527,29 @@
           </article>
 
           <!-- Card 4: Undangan Aqiqah -->
-          <article class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
+          <article
+            class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
             <div class="h-48 sm:h-52 overflow-hidden relative">
-              <img alt="Undangan Aqiqah &amp; Tasyakuran Lahiran Momen Bareng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-              <span class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Aqiqah</span>
+              <img alt="Undangan Aqiqah &amp; Tasyakuran Lahiran Momen Bareng"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+              <span
+                class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Aqiqah</span>
             </div>
             <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">Undangan Aqiqah</h3>
+                <h3
+                  class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">
+                  Undangan Aqiqah</h3>
                 <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-                  Sambut kehadiran sang buah hati dengan desain lembut bertema islami modern, doa tasyakuran, profil nama bayi, dan live streaming link.
+                  Sambut kehadiran sang buah hati dengan desain lembut bertema islami modern, doa tasyakuran, profil
+                  nama bayi, dan live streaming link.
                 </p>
               </div>
               <div class="mt-6 pt-4 border-t border-subtle-border flex items-center justify-between">
                 <span class="text-xs text-muted-gold font-medium">Lembut &amp; Penuh Doa</span>
-                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all" href="#koleksi">
+                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#koleksi">
                   <span>Lihat Detail</span>
                   <i class="w-4 h-4" data-lucide="chevron-right"></i>
                 </a>
@@ -442,21 +558,29 @@
           </article>
 
           <!-- Card 5: Undangan Khitanan -->
-          <article class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
+          <article
+            class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
             <div class="h-48 sm:h-52 overflow-hidden relative">
-              <img alt="Undangan Khitanan digital Momen Bareng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-              <span class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Khitanan</span>
+              <img alt="Undangan Khitanan digital Momen Bareng"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+              <span
+                class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Khitanan</span>
             </div>
             <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">Undangan Khitanan</h3>
+                <h3
+                  class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">
+                  Undangan Khitanan</h3>
                 <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-                  Format undangan syukuran khitanan ramah keluarga dengan informasi jadwal walimah, doa restu, ucapan selamat, dan peta Google Maps.
+                  Format undangan syukuran khitanan ramah keluarga dengan informasi jadwal walimah, doa restu, ucapan
+                  selamat, dan peta Google Maps.
                 </p>
               </div>
               <div class="mt-6 pt-4 border-t border-subtle-border flex items-center justify-between">
                 <span class="text-xs text-muted-gold font-medium">Praktis &amp; Edukatif</span>
-                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all" href="#koleksi">
+                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#koleksi">
                   <span>Lihat Detail</span>
                   <i class="w-4 h-4" data-lucide="chevron-right"></i>
                 </a>
@@ -465,21 +589,30 @@
           </article>
 
           <!-- Card 6: Undangan Acara Spesial -->
-          <article class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
+          <article
+            class="service-card group bg-warm-card rounded-3xl overflow-hidden border border-subtle-border shadow-soft-card hover:shadow-hover-card transition-all duration-300 flex flex-col reveal-item">
             <div class="h-48 sm:h-52 overflow-hidden relative">
-              <img alt="Undangan Acara Spesial dan Gathering Momen Bareng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-              <span class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Acara Spesial</span>
+              <img alt="Undangan Acara Spesial dan Gathering Momen Bareng"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+              <span
+                class="absolute top-4 left-4 bg-ivory/90 backdrop-blur-sm text-[11px] font-medium text-deep-brown px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Acara
+                Spesial</span>
             </div>
             <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">Undangan Acara Spesial</h3>
+                <h3
+                  class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2 group-hover:text-muted-gold transition-colors">
+                  Undangan Acara Spesial</h3>
                 <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-                  Bridal shower, baby shower, reuni akbar, halalbihalal, syukuran rumah baru, hingga corporate annual gathering yang profesional.
+                  Bridal shower, baby shower, reuni akbar, halalbihalal, syukuran rumah baru, hingga corporate annual
+                  gathering yang profesional.
                 </p>
               </div>
               <div class="mt-6 pt-4 border-t border-subtle-border flex items-center justify-between">
                 <span class="text-xs text-muted-gold font-medium">Custom Request</span>
-                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all" href="#koleksi">
+                <a class="text-xs uppercase tracking-wider font-semibold text-deep-brown flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#koleksi">
                   <span>Lihat Detail</span>
                   <i class="w-4 h-4" data-lucide="chevron-right"></i>
                 </a>
@@ -494,7 +627,7 @@
     <!-- ==================== E. FEATURED COLLECTION ==================== -->
     <section class="py-16 sm:py-20 md:py-28 bg-soft-beige/25 border-y border-subtle-border" id="koleksi">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 reveal-item">
           <div>
             <span class="text-xs uppercase tracking-widest text-muted-gold font-semibold">GALERI TEMPLATE</span>
@@ -502,32 +635,62 @@
               Temukan Desain yang Bercerita.
             </h2>
             <p class="text-deep-brown/70 mt-2 text-sm sm:text-base font-light max-w-xl">
-              Pilihan gaya estetika yang dikurasi dengan detail tipografi, sentuhan ornamen artisanal, dan tata letak yang memikat mata.
+              Pilihan gaya estetika yang dikurasi dengan detail tipografi, sentuhan ornamen artisanal, dan tata letak
+              yang memikat mata.
             </p>
           </div>
 
           <!-- Category Filter Buttons (Responsive pills) -->
-          <div aria-label="Filter kategori desain" class="mt-5 md:mt-0 flex flex-wrap gap-1.5 sm:gap-2" id="collection-filters" role="tablist">
-            <button class="filter-btn active px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-deep-brown text-ivory shadow-sm" data-filter="all">Semua</button>
-            <button class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border" data-filter="classic">Classic</button>
-            <button class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border" data-filter="minimalist">Minimalist</button>
-            <button class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border" data-filter="floral">Floral</button>
-            <button class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border" data-filter="heritage">Heritage</button>
-            <button class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border" data-filter="luxury">Luxury</button>
-            <button class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border" data-filter="pastel">Pastel</button>
+          <div aria-label="Filter kategori desain" class="mt-5 md:mt-0 flex flex-wrap gap-1.5 sm:gap-2"
+            id="collection-filters" role="tablist">
+            <button
+              class="filter-btn active px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-deep-brown text-ivory shadow-sm"
+              data-filter="all">Semua</button>
+            <button
+              class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border"
+              data-filter="classic">Classic</button>
+            <button
+              class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border"
+              data-filter="minimalist">Minimalist</button>
+            <button
+              class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border"
+              data-filter="floral">Floral</button>
+            <button
+              class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border"
+              data-filter="heritage">Heritage</button>
+            <button
+              class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border"
+              data-filter="luxury">Luxury</button>
+            <button
+              class="filter-btn px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all bg-ivory text-deep-brown/80 hover:bg-soft-beige border border-subtle-border"
+              data-filter="pastel">Pastel</button>
           </div>
         </div>
 
         <!-- Collection Grid Container (1 col mobile, 2 col tablet, 3 col desktop) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="collection-grid">
-          
+
           <!-- Item 1: Elegant Classic -->
           <div class="collection-item reveal-item" data-category="classic">
-            <div class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
-              <div class="preview-card-img relative aspect-[3/4] rounded-2xl overflow-hidden bg-soft-beige cursor-pointer" data-category="Elegant Classic — Pernikahan" data-desc="Perpaduan tipografi serif klasik dengan ornamen garis emas tipis, cocok untuk resepsi megah bernuansa ballroom dan gereja." data-img="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Serenade Ivory">
-                <img alt="Desain Elegant Classic - Serenade Ivory" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
-                  <button class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors" data-category="Elegant Classic — Pernikahan" data-desc="Perpaduan tipografi serif klasik dengan ornamen garis emas tipis, cocok untuk resepsi megah bernuansa ballroom dan gereja." data-img="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Serenade Ivory">
+            <div
+              class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
+              <div
+                class="preview-card-img relative aspect-[3/4] rounded-2xl overflow-hidden bg-soft-beige cursor-pointer"
+                data-category="Elegant Classic — Pernikahan"
+                data-desc="Perpaduan tipografi serif klasik dengan ornamen garis emas tipis, cocok untuk resepsi megah bernuansa ballroom dan gereja."
+                data-img="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                data-title="Serenade Ivory">
+                <img alt="Desain Elegant Classic - Serenade Ivory"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                  <button
+                    class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors"
+                    data-category="Elegant Classic — Pernikahan"
+                    data-desc="Perpaduan tipografi serif klasik dengan ornamen garis emas tipis, cocok untuk resepsi megah bernuansa ballroom dan gereja."
+                    data-img="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    data-title="Serenade Ivory">
                     Preview Undangan
                   </button>
                 </div>
@@ -537,7 +700,12 @@
                   <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown">Serenade Ivory</h3>
                   <p class="text-xs text-deep-brown/60">Elegant Classic • Pernikahan</p>
                 </div>
-                <button aria-label="Lihat preview Serenade Ivory" class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors" data-category="Elegant Classic — Pernikahan" data-desc="Perpaduan tipografi serif klasik dengan ornamen garis emas tipis, cocok untuk resepsi megah bernuansa ballroom dan gereja." data-img="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Serenade Ivory">
+                <button aria-label="Lihat preview Serenade Ivory"
+                  class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors"
+                  data-category="Elegant Classic — Pernikahan"
+                  data-desc="Perpaduan tipografi serif klasik dengan ornamen garis emas tipis, cocok untuk resepsi megah bernuansa ballroom dan gereja."
+                  data-img="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  data-title="Serenade Ivory">
                   <i class="w-4 h-4" data-lucide="eye"></i>
                 </button>
               </div>
@@ -546,11 +714,20 @@
 
           <!-- Item 2: Modern Minimalist -->
           <div class="collection-item reveal-item" data-category="minimalist">
-            <div class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
+            <div
+              class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
               <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-soft-beige">
-                <img alt="Desain Modern Minimalist - Pure Monochrome" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
-                  <button class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors" data-category="Modern Minimalist — Lamaran &amp; Wedding" data-desc="Banyak ruang putih (negative space), tipografi modern sans-serif editorial, bersih dan sangat berkarakter." data-img="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Pure Monochrome">
+                <img alt="Desain Modern Minimalist - Pure Monochrome"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                  <button
+                    class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors"
+                    data-category="Modern Minimalist — Lamaran &amp; Wedding"
+                    data-desc="Banyak ruang putih (negative space), tipografi modern sans-serif editorial, bersih dan sangat berkarakter."
+                    data-img="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    data-title="Pure Monochrome">
                     Preview Undangan
                   </button>
                 </div>
@@ -560,7 +737,12 @@
                   <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown">Pure Monochrome</h3>
                   <p class="text-xs text-deep-brown/60">Modern Minimalist • Pernikahan</p>
                 </div>
-                <button aria-label="Lihat preview Pure Monochrome" class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors" data-category="Modern Minimalist — Lamaran &amp; Wedding" data-desc="Banyak ruang putih (negative space), tipografi modern sans-serif editorial, bersih dan sangat berkarakter." data-img="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Pure Monochrome">
+                <button aria-label="Lihat preview Pure Monochrome"
+                  class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors"
+                  data-category="Modern Minimalist — Lamaran &amp; Wedding"
+                  data-desc="Banyak ruang putih (negative space), tipografi modern sans-serif editorial, bersih dan sangat berkarakter."
+                  data-img="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  data-title="Pure Monochrome">
                   <i class="w-4 h-4" data-lucide="eye"></i>
                 </button>
               </div>
@@ -569,11 +751,20 @@
 
           <!-- Item 3: Floral Romance -->
           <div class="collection-item reveal-item" data-category="floral">
-            <div class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
+            <div
+              class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
               <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-soft-beige">
-                <img alt="Desain Floral Romance - Botanical Botanica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
-                  <button class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors" data-category="Floral Romance — Garden Party" data-desc="Ilustrasi bunga mawar dan daun eucalyptus bernuansa cat air lembut, ideal untuk pesta taman (garden wedding)." data-img="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Botanical Botanica">
+                <img alt="Desain Floral Romance - Botanical Botanica"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                  <button
+                    class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors"
+                    data-category="Floral Romance — Garden Party"
+                    data-desc="Ilustrasi bunga mawar dan daun eucalyptus bernuansa cat air lembut, ideal untuk pesta taman (garden wedding)."
+                    data-img="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    data-title="Botanical Botanica">
                     Preview Undangan
                   </button>
                 </div>
@@ -583,7 +774,12 @@
                   <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown">Botanical Romance</h3>
                   <p class="text-xs text-deep-brown/60">Floral Romance • Outdoor Party</p>
                 </div>
-                <button aria-label="Lihat preview Botanical Romance" class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors" data-category="Floral Romance — Garden Party" data-desc="Ilustrasi bunga mawar dan daun eucalyptus bernuansa cat air lembut, ideal untuk pesta taman (garden wedding)." data-img="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Botanical Botanica">
+                <button aria-label="Lihat preview Botanical Romance"
+                  class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors"
+                  data-category="Floral Romance — Garden Party"
+                  data-desc="Ilustrasi bunga mawar dan daun eucalyptus bernuansa cat air lembut, ideal untuk pesta taman (garden wedding)."
+                  data-img="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  data-title="Botanical Botanica">
                   <i class="w-4 h-4" data-lucide="eye"></i>
                 </button>
               </div>
@@ -592,11 +788,20 @@
 
           <!-- Item 4: Traditional Heritage -->
           <div class="collection-item reveal-item" data-category="heritage">
-            <div class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
+            <div
+              class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
               <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-soft-beige">
-                <img alt="Desain Traditional Heritage - Nusantara Ageng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
-                  <button class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors" data-category="Traditional Heritage — Adat Jawa / Sunda / Minang" data-desc="Sentuhan ornamen motif etnik nusantara yang anggun tanpa meninggalkan kesan modern dan kemudahan baca." data-img="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Nusantara Ageng">
+                <img alt="Desain Traditional Heritage - Nusantara Ageng"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                  <button
+                    class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors"
+                    data-category="Traditional Heritage — Adat Jawa / Sunda / Minang"
+                    data-desc="Sentuhan ornamen motif etnik nusantara yang anggun tanpa meninggalkan kesan modern dan kemudahan baca."
+                    data-img="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    data-title="Nusantara Ageng">
                     Preview Undangan
                   </button>
                 </div>
@@ -606,7 +811,12 @@
                   <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown">Nusantara Ageng</h3>
                   <p class="text-xs text-deep-brown/60">Traditional Heritage • Adat Tradisi</p>
                 </div>
-                <button aria-label="Lihat preview Nusantara Ageng" class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors" data-category="Traditional Heritage — Adat Jawa / Sunda / Minang" data-desc="Sentuhan ornamen motif etnik nusantara yang anggun tanpa meninggalkan kesan modern dan kemudahan baca." data-img="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Nusantara Ageng">
+                <button aria-label="Lihat preview Nusantara Ageng"
+                  class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors"
+                  data-category="Traditional Heritage — Adat Jawa / Sunda / Minang"
+                  data-desc="Sentuhan ornamen motif etnik nusantara yang anggun tanpa meninggalkan kesan modern dan kemudahan baca."
+                  data-img="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  data-title="Nusantara Ageng">
                   <i class="w-4 h-4" data-lucide="eye"></i>
                 </button>
               </div>
@@ -615,11 +825,20 @@
 
           <!-- Item 5: Contemporary Luxury -->
           <div class="collection-item reveal-item" data-category="luxury">
-            <div class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
+            <div
+              class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
               <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-soft-beige">
-                <img alt="Desain Contemporary Luxury - Velvet Noir &amp; Gold" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
-                  <button class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors" data-category="Contemporary Luxury — Gala &amp; Evening Party" data-desc="Nuansa deep tone dengan aksen foil emas digital berkilau, menyajikan aura glamor dan eksklusifitas tinggi." data-img="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Velvet Nocturne">
+                <img alt="Desain Contemporary Luxury - Velvet Noir &amp; Gold"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                  <button
+                    class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors"
+                    data-category="Contemporary Luxury — Gala &amp; Evening Party"
+                    data-desc="Nuansa deep tone dengan aksen foil emas digital berkilau, menyajikan aura glamor dan eksklusifitas tinggi."
+                    data-img="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    data-title="Velvet Nocturne">
                     Preview Undangan
                   </button>
                 </div>
@@ -629,7 +848,12 @@
                   <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown">Velvet Nocturne</h3>
                   <p class="text-xs text-deep-brown/60">Contemporary Luxury • Evening Gala</p>
                 </div>
-                <button aria-label="Lihat preview Velvet Nocturne" class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors" data-category="Contemporary Luxury — Gala &amp; Evening Party" data-desc="Nuansa deep tone dengan aksen foil emas digital berkilau, menyajikan aura glamor dan eksklusifitas tinggi." data-img="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Velvet Nocturne">
+                <button aria-label="Lihat preview Velvet Nocturne"
+                  class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors"
+                  data-category="Contemporary Luxury — Gala &amp; Evening Party"
+                  data-desc="Nuansa deep tone dengan aksen foil emas digital berkilau, menyajikan aura glamor dan eksklusifitas tinggi."
+                  data-img="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  data-title="Velvet Nocturne">
                   <i class="w-4 h-4" data-lucide="eye"></i>
                 </button>
               </div>
@@ -638,11 +862,20 @@
 
           <!-- Item 6: Soft Pastel -->
           <div class="collection-item reveal-item" data-category="pastel">
-            <div class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
+            <div
+              class="bg-ivory rounded-3xl p-3 border border-subtle-border shadow-soft-card group hover:shadow-hover-card transition-all">
               <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-soft-beige">
-                <img alt="Desain Soft Pastel - Blush Blossom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
-                  <button class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors" data-category="Soft Pastel — Aqiqah, Birthday &amp; Sweet 17" data-desc="Warna dusty rose dan peach lembut, sangat cocok untuk perayaan tasyakuran kelahiran bayi maupun ulang tahun." data-img="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Blush Blossom">
+                <img alt="Desain Soft Pastel - Blush Blossom"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                  <button
+                    class="preview-btn w-full py-2.5 bg-ivory text-deep-brown text-xs uppercase tracking-wider font-semibold rounded-xl shadow-md hover:bg-muted-gold hover:text-white transition-colors"
+                    data-category="Soft Pastel — Aqiqah, Birthday &amp; Sweet 17"
+                    data-desc="Warna dusty rose dan peach lembut, sangat cocok untuk perayaan tasyakuran kelahiran bayi maupun ulang tahun."
+                    data-img="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    data-title="Blush Blossom">
                     Preview Undangan
                   </button>
                 </div>
@@ -652,7 +885,12 @@
                   <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown">Blush Blossom</h3>
                   <p class="text-xs text-deep-brown/60">Soft Pastel • Aqiqah &amp; Birthday</p>
                 </div>
-                <button aria-label="Lihat preview Blush Blossom" class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors" data-category="Soft Pastel — Aqiqah, Birthday &amp; Sweet 17" data-desc="Warna dusty rose dan peach lembut, sangat cocok untuk perayaan tasyakuran kelahiran bayi maupun ulang tahun." data-img="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-title="Blush Blossom">
+                <button aria-label="Lihat preview Blush Blossom"
+                  class="preview-icon-btn p-2 rounded-full hover:bg-soft-beige text-deep-brown/70 hover:text-deep-brown transition-colors"
+                  data-category="Soft Pastel — Aqiqah, Birthday &amp; Sweet 17"
+                  data-desc="Warna dusty rose dan peach lembut, sangat cocok untuk perayaan tasyakuran kelahiran bayi maupun ulang tahun."
+                  data-img="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  data-title="Blush Blossom">
                   <i class="w-4 h-4" data-lucide="eye"></i>
                 </button>
               </div>
@@ -672,74 +910,87 @@
             Bikin Persiapan Acara Jadi Lebih Mudah.
           </h2>
           <p class="text-deep-brown/70 mt-2 sm:mt-3 text-sm sm:text-base font-light">
-            Fokuslah menikmati momen bahagia Anda, biarkan kami memudahkan distribusi undangan kepada keluarga dan sahabat tercinta.
+            Fokuslah menikmati momen bahagia Anda, biarkan kami memudahkan distribusi undangan kepada keluarga dan
+            sahabat tercinta.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <!-- Poin 1 -->
           <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
-            <div class="w-12 h-12 rounded-2xl bg-dusty-rose/20 text-dusty-rose flex items-center justify-center mb-5 sm:mb-6">
+            <div
+              class="w-12 h-12 rounded-2xl bg-dusty-rose/20 text-dusty-rose flex items-center justify-center mb-5 sm:mb-6">
               <i class="w-6 h-6" data-lucide="share-2"></i>
             </div>
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2">Praktis Dibagikan</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Cukup sebar satu link melalui WhatsApp, Instagram, atau email tanpa perlu repot mencetak dan mengantarkan undangan fisik satu per satu.
+              Cukup sebar satu link melalui WhatsApp, Instagram, atau email tanpa perlu repot mencetak dan mengantarkan
+              undangan fisik satu per satu.
             </p>
           </div>
 
           <!-- Poin 2 -->
           <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
-            <div class="w-12 h-12 rounded-2xl bg-soft-beige text-muted-gold flex items-center justify-center mb-5 sm:mb-6 border border-muted-gold/20">
+            <div
+              class="w-12 h-12 rounded-2xl bg-soft-beige text-muted-gold flex items-center justify-center mb-5 sm:mb-6 border border-muted-gold/20">
               <i class="w-6 h-6" data-lucide="palette"></i>
             </div>
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2">Desain Personal</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Tiap elemen dapat disesuaikan dengan tema pakaian, dekorasi venue, pemilihan warna favorit, dan kepribadian pemilik acara.
+              Tiap elemen dapat disesuaikan dengan tema pakaian, dekorasi venue, pemilihan warna favorit, dan
+              kepribadian pemilik acara.
             </p>
           </div>
 
           <!-- Poin 3 -->
           <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
-            <div class="w-12 h-12 rounded-2xl bg-deep-brown/10 text-deep-brown flex items-center justify-center mb-5 sm:mb-6">
+            <div
+              class="w-12 h-12 rounded-2xl bg-deep-brown/10 text-deep-brown flex items-center justify-center mb-5 sm:mb-6">
               <i class="w-6 h-6" data-lucide="layout-list"></i>
             </div>
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2">Informasi Tertata Rapi</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Detail waktu, alamat maps yang akurat, protokol acara, dress code, dan nomor rekening digital tersaji teratur tanpa membingungkan tamu.
+              Detail waktu, alamat maps yang akurat, protokol acara, dress code, dan nomor rekening digital tersaji
+              teratur tanpa membingungkan tamu.
             </p>
           </div>
 
           <!-- Poin 4 -->
           <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
-            <div class="w-12 h-12 rounded-2xl bg-dusty-rose/20 text-dusty-rose flex items-center justify-center mb-5 sm:mb-6">
+            <div
+              class="w-12 h-12 rounded-2xl bg-dusty-rose/20 text-dusty-rose flex items-center justify-center mb-5 sm:mb-6">
               <i class="w-6 h-6" data-lucide="smartphone"></i>
             </div>
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2">Responsif di Semua Gadget</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Tampilan undangan tetap proporsional dan nyaman dibuka baik di smartphone Android, iPhone, tablet, maupun laptop layar lebar.
+              Tampilan undangan tetap proporsional dan nyaman dibuka baik di smartphone Android, iPhone, tablet, maupun
+              laptop layar lebar.
             </p>
           </div>
 
           <!-- Poin 5 -->
           <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
-            <div class="w-12 h-12 rounded-2xl bg-soft-beige text-muted-gold flex items-center justify-center mb-5 sm:mb-6 border border-muted-gold/20">
+            <div
+              class="w-12 h-12 rounded-2xl bg-soft-beige text-muted-gold flex items-center justify-center mb-5 sm:mb-6 border border-muted-gold/20">
               <i class="w-6 h-6" data-lucide="messages-square"></i>
             </div>
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2">Proses Pemesanan Mudah</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Komunikasi langsung melalui WhatsApp dengan panduan form pengisian data yang ramah dan asistensi tim hingga undangan siap tayang.
+              Komunikasi langsung melalui WhatsApp dengan panduan form pengisian data yang ramah dan asistensi tim
+              hingga undangan siap tayang.
             </p>
           </div>
 
           <!-- Poin 6 -->
           <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
-            <div class="w-12 h-12 rounded-2xl bg-deep-brown/10 text-deep-brown flex items-center justify-center mb-5 sm:mb-6">
+            <div
+              class="w-12 h-12 rounded-2xl bg-deep-brown/10 text-deep-brown flex items-center justify-center mb-5 sm:mb-6">
               <i class="w-6 h-6" data-lucide="sparkles"></i>
             </div>
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-deep-brown mb-2">Tampilan Berkesan</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Dilengkapi animasi pembuka amplop yang anggun, musik pengiring yang menyentuh, serta efek interaktif yang meninggalkan kesan mendalam bagi tamu.
+              Dilengkapi animasi pembuka amplop yang anggun, musik pengiring yang menyentuh, serta efek interaktif yang
+              meninggalkan kesan mendalam bagi tamu.
             </p>
           </div>
         </div>
@@ -762,34 +1013,41 @@
         <!-- 4 Step Timeline (1 col mobile, 2 col tablet, 4 col desktop) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative">
           <!-- Step 1 -->
-          <div class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
+          <div
+            class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
             <span class="font-serif text-3xl sm:text-4xl font-bold text-muted-gold/60 mb-3 sm:mb-4">01</span>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown mb-2">Pilih Desain</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Jelajahi koleksi katalog kami dan tentukan konsep desain yang paling selaras dengan nuansa momen bahagiamu.
+              Jelajahi koleksi katalog kami dan tentukan konsep desain yang paling selaras dengan nuansa momen
+              bahagiamu.
             </p>
           </div>
 
           <!-- Step 2 -->
-          <div class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
+          <div
+            class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
             <span class="font-serif text-3xl sm:text-4xl font-bold text-muted-gold/60 mb-3 sm:mb-4">02</span>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown mb-2">Konsultasi &amp; Kirim Data</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Hubungi tim Momen Bareng via WhatsApp dan lengkapi rincian acara (nama, tanggal, tempat, foto, musik pilihan).
+              Hubungi tim Momen Bareng via WhatsApp dan lengkapi rincian acara (nama, tanggal, tempat, foto, musik
+              pilihan).
             </p>
           </div>
 
           <!-- Step 3 -->
-          <div class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
+          <div
+            class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
             <span class="font-serif text-3xl sm:text-4xl font-bold text-muted-gold/60 mb-3 sm:mb-4">03</span>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown mb-2">Proses Personalisasi</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
-              Tim desainer kami merakit website undangan dengan teliti. Anda akan mendapatkan tautan pratinjau untuk proses revisi teks.
+              Tim desainer kami merakit website undangan dengan teliti. Anda akan mendapatkan tautan pratinjau untuk
+              proses revisi teks.
             </p>
           </div>
 
           <!-- Step 4 -->
-          <div class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
+          <div
+            class="relative flex flex-col items-start bg-ivory p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card reveal-item">
             <span class="font-serif text-3xl sm:text-4xl font-bold text-muted-gold/60 mb-3 sm:mb-4">04</span>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-deep-brown mb-2">Undangan Siap Dibagikan</h3>
             <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed font-light">
@@ -799,7 +1057,9 @@
         </div>
 
         <div class="mt-10 sm:mt-12 text-center reveal-item">
-          <button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-8 py-3.5 rounded-full text-xs uppercase tracking-widest font-semibold transition-all shadow-md active:scale-95" data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi mengenai cara pesan undangan digital.">
+          <button
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-8 py-3.5 rounded-full text-xs uppercase tracking-widest font-semibold transition-all shadow-md active:scale-95"
+            data-wa-trigger="Halo Momen Bareng, saya ingin konsultasi mengenai cara pesan undangan digital.">
             <span>Mulai Langkah Pertama Sekarang</span>
             <i class="w-4 h-4" data-lucide="arrow-right"></i>
           </button>
@@ -816,15 +1076,17 @@
             Cerita Bahagia Mereka.
           </h2>
           <p class="text-deep-brown/70 mt-2 sm:mt-3 text-sm sm:text-base font-light">
-            Ruang berbagi cerita dan kesan dari mereka yang telah mempercayakan undangan digitalnya bersama Momen Bareng.
+            Ruang berbagi cerita dan kesan dari mereka yang telah mempercayakan undangan digitalnya bersama Momen
+            Bareng.
           </p>
         </div>
 
         <!-- Layout Testimoni Terkurasi (1 col mobile, 3 col desktop) -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          
+
           <!-- Testimonial 1 -->
-          <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card flex flex-col justify-between reveal-item">
+          <div
+            class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card flex flex-col justify-between reveal-item">
             <div>
               <div class="flex text-muted-gold gap-1 mb-4">
                 <i class="w-4 h-4 fill-current" data-lucide="star"></i>
@@ -834,11 +1096,13 @@
                 <i class="w-4 h-4 fill-current" data-lucide="star"></i>
               </div>
               <p class="italic text-deep-brown/80 text-xs sm:text-sm leading-relaxed font-light mb-6">
-                “Tampilan undangannya sangat anggun dan pas dibuka di HP sangat mulus. Tamu-tamu banyak yang memuji lagunya dan kemudahan fitur RSVP-nya.”
+                “Tampilan undangannya sangat anggun dan pas dibuka di HP sangat mulus. Tamu-tamu banyak yang memuji
+                lagunya dan kemudahan fitur RSVP-nya.”
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-subtle-border">
-              <div class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-xs font-semibold text-deep-brown flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-xs font-semibold text-deep-brown flex-shrink-0">
                 N&amp;R
               </div>
               <div>
@@ -849,7 +1113,8 @@
           </div>
 
           <!-- Testimonial 2 -->
-          <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card flex flex-col justify-between reveal-item">
+          <div
+            class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card flex flex-col justify-between reveal-item">
             <div>
               <div class="flex text-muted-gold gap-1 mb-4">
                 <i class="w-4 h-4 fill-current" data-lucide="star"></i>
@@ -859,11 +1124,13 @@
                 <i class="w-4 h-4 fill-current" data-lucide="star"></i>
               </div>
               <p class="italic text-deep-brown/80 text-xs sm:text-sm leading-relaxed font-light mb-6">
-                “Proses revisi teks dan penyesuaian fotonya sangat cepat. Tim Momen Bareng ramah dan sabar membantu kami yang sempat bingung memilih konsep.”
+                “Proses revisi teks dan penyesuaian fotonya sangat cepat. Tim Momen Bareng ramah dan sabar membantu kami
+                yang sempat bingung memilih konsep.”
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-subtle-border">
-              <div class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-xs font-semibold text-deep-brown flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-xs font-semibold text-deep-brown flex-shrink-0">
                 D&amp;A
               </div>
               <div>
@@ -874,7 +1141,8 @@
           </div>
 
           <!-- Testimonial 3 -->
-          <div class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card flex flex-col justify-between reveal-item">
+          <div
+            class="bg-warm-card p-6 sm:p-8 rounded-3xl border border-subtle-border shadow-soft-card flex flex-col justify-between reveal-item">
             <div>
               <div class="flex text-muted-gold gap-1 mb-4">
                 <i class="w-4 h-4 fill-current" data-lucide="star"></i>
@@ -884,11 +1152,13 @@
                 <i class="w-4 h-4 fill-current" data-lucide="star"></i>
               </div>
               <p class="italic text-deep-brown/80 text-xs sm:text-sm leading-relaxed font-light mb-6">
-                “Untuk acara aqiqah anak pertama kami, desainnya sangat manis dan bersih. Praktis sekali tinggal kirim ke grup keluarga besar lewat WhatsApp.”
+                “Untuk acara aqiqah anak pertama kami, desainnya sangat manis dan bersih. Praktis sekali tinggal kirim
+                ke grup keluarga besar lewat WhatsApp.”
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-subtle-border">
-              <div class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-xs font-semibold text-deep-brown flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-xs font-semibold text-deep-brown flex-shrink-0">
                 F&amp;M
               </div>
               <div>
@@ -921,82 +1191,117 @@
 
         <!-- Accordion Container -->
         <div class="space-y-4" id="faq-accordion">
-          
+
           <!-- FAQ Item 1 -->
-          <div class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
-            <button aria-expanded="false" class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
-              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Apa itu undangan digital Momen Bareng?</span>
+          <div
+            class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
+            <button aria-expanded="false"
+              class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
+              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Apa itu undangan
+                digital Momen Bareng?</span>
               <span class="faq-icon text-muted-gold transition-transform duration-300 flex-shrink-0">
                 <i class="w-5 h-5" data-lucide="plus"></i>
               </span>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
-              Undangan digital Momen Bareng adalah undangan berbasis website interaktif yang dapat diakses melalui browser gadget apa pun tanpa perlu menginstal aplikasi. Undangan ini memuat informasi lengkap acara, peta penunjuk arah, hitung mundur, galeri foto/video, musik, hingga konfirmasi kehadiran (RSVP) secara praktis.
+            <div
+              class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
+              Undangan digital Momen Bareng adalah undangan berbasis website interaktif yang dapat diakses melalui
+              browser gadget apa pun tanpa perlu menginstal aplikasi. Undangan ini memuat informasi lengkap acara, peta
+              penunjuk arah, hitung mundur, galeri foto/video, musik, hingga konfirmasi kehadiran (RSVP) secara praktis.
             </div>
           </div>
 
           <!-- FAQ Item 2 -->
-          <div class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
-            <button aria-expanded="false" class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
-              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Bagaimana cara memesan undangan?</span>
+          <div
+            class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
+            <button aria-expanded="false"
+              class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
+              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Bagaimana cara memesan
+                undangan?</span>
               <span class="faq-icon text-muted-gold transition-transform duration-300 flex-shrink-0">
                 <i class="w-5 h-5" data-lucide="plus"></i>
               </span>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
-              Caranya sangat mudah: cukup pilih tema dari galeri koleksi kami, lalu klik tombol "Pesan Undangan" atau tombol WhatsApp untuk berkonsultasi langsung dengan admin. Tim kami akan mengirimkan panduan formulir pengisian data acara Anda.
+            <div
+              class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
+              Caranya sangat mudah: cukup pilih tema dari galeri koleksi kami, lalu klik tombol "Pesan Undangan" atau
+              tombol WhatsApp untuk berkonsultasi langsung dengan admin. Tim kami akan mengirimkan panduan formulir
+              pengisian data acara Anda.
             </div>
           </div>
 
           <!-- FAQ Item 3 -->
-          <div class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
-            <button aria-expanded="false" class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
-              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Apakah desain dapat disesuaikan?</span>
+          <div
+            class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
+            <button aria-expanded="false"
+              class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
+              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Apakah desain dapat
+                disesuaikan?</span>
               <span class="faq-icon text-muted-gold transition-transform duration-300 flex-shrink-0">
                 <i class="w-5 h-5" data-lucide="plus"></i>
               </span>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
-              Tentu bisa! Anda dapat menyesuaikan foto utama, judul acara, teks doa/kutipan, susunan rundown acara, warna dominan yang senada dengan tema dekorasi, serta memilih lagu latar sesuai kesukaan Anda.
+            <div
+              class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
+              Tentu bisa! Anda dapat menyesuaikan foto utama, judul acara, teks doa/kutipan, susunan rundown acara,
+              warna dominan yang senada dengan tema dekorasi, serta memilih lagu latar sesuai kesukaan Anda.
             </div>
           </div>
 
           <!-- FAQ Item 4 -->
-          <div class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
-            <button aria-expanded="false" class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
-              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Informasi apa saja yang perlu disiapkan?</span>
+          <div
+            class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
+            <button aria-expanded="false"
+              class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
+              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Informasi apa saja yang
+                perlu disiapkan?</span>
               <span class="faq-icon text-muted-gold transition-transform duration-300 flex-shrink-0">
                 <i class="w-5 h-5" data-lucide="plus"></i>
               </span>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
-              Informasi dasar yang dibutuhkan meliputi: nama mempelai / yang berulang tahun / anak yang di-aqiqah, nama orang tua / keluarga, waktu dan tanggal kegiatan, alamat lengkap venue beserta tautan Google Maps, serta foto pendukung bila memilih template yang memiliki galeri.
+            <div
+              class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
+              Informasi dasar yang dibutuhkan meliputi: nama mempelai / yang berulang tahun / anak yang di-aqiqah, nama
+              orang tua / keluarga, waktu dan tanggal kegiatan, alamat lengkap venue beserta tautan Google Maps, serta
+              foto pendukung bila memilih template yang memiliki galeri.
             </div>
           </div>
 
           <!-- FAQ Item 5 -->
-          <div class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
-            <button aria-expanded="false" class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
-              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Berapa lama proses pembuatan undangan?</span>
+          <div
+            class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
+            <button aria-expanded="false"
+              class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
+              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Berapa lama proses
+                pembuatan undangan?</span>
               <span class="faq-icon text-muted-gold transition-transform duration-300 flex-shrink-0">
                 <i class="w-5 h-5" data-lucide="plus"></i>
               </span>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
-              Proses pengerjaan umumnya memakan waktu 1 hingga 3 hari kerja setelah seluruh data dan foto diserahkan dengan lengkap. Untuk paket ekspres atau informasi paket harga terkini, silakan hubungi tim kami via WhatsApp agar mendapatkan estimasi yang paling tepat.
+            <div
+              class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
+              Proses pengerjaan umumnya memakan waktu 1 hingga 3 hari kerja setelah seluruh data dan foto diserahkan
+              dengan lengkap. Untuk paket ekspres atau informasi paket harga terkini, silakan hubungi tim kami via
+              WhatsApp agar mendapatkan estimasi yang paling tepat.
             </div>
           </div>
 
           <!-- FAQ Item 6 -->
-          <div class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
-            <button aria-expanded="false" class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
-              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Bagaimana cara membagikan undangan?</span>
+          <div
+            class="faq-item bg-ivory rounded-2xl border border-subtle-border overflow-hidden transition-all reveal-item">
+            <button aria-expanded="false"
+              class="faq-toggle w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold">
+              <span class="font-serif text-base sm:text-lg md:text-xl font-bold text-deep-brown">Bagaimana cara
+                membagikan undangan?</span>
               <span class="faq-icon text-muted-gold transition-transform duration-300 flex-shrink-0">
                 <i class="w-5 h-5" data-lucide="plus"></i>
               </span>
             </button>
-            <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
-              Anda akan menerima tautan unik (URL link). Kami juga menyediakan generator pesan salam WhatsApp otomatis yang dapat mencantumkan nama masing-masing tamu secara personal (misal: "Kepada Yth. Bpk/Ibu [Nama Tamu]"), sehingga Anda tinggal menyalin dan mengirimkannya langsung.
+            <div
+              class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-deep-brown/75 text-xs sm:text-sm md:text-base leading-relaxed font-light border-t border-subtle-border/50 pt-4">
+              Anda akan menerima tautan unik (URL link). Kami juga menyediakan generator pesan salam WhatsApp otomatis
+              yang dapat mencantumkan nama masing-masing tamu secara personal (misal: "Kepada Yth. Bpk/Ibu [Nama
+              Tamu]"), sehingga Anda tinggal menyalin dan mengirimkannya langsung.
             </div>
           </div>
 
@@ -1007,24 +1312,31 @@
     <!-- ==================== J. CALL TO ACTION ==================== -->
     <section class="py-16 sm:py-24 bg-deep-brown text-ivory relative overflow-hidden">
       <!-- Decorative circles -->
-      <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-dusty-rose/20 blur-3xl pointer-events-none"></div>
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-dusty-rose/20 blur-3xl pointer-events-none">
+      </div>
       <div class="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-muted-gold/20 blur-3xl pointer-events-none"></div>
 
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-item">
         <span class="text-xs uppercase tracking-widest text-muted-gold font-semibold">MULAI LANGKAH BAHAGIAMU</span>
-        <h2 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight mt-3 mb-5 sm:mb-6 leading-tight">
+        <h2
+          class="font-serif text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight mt-3 mb-5 sm:mb-6 leading-tight">
           Siap Membagikan Cerita Bahagiamu?
         </h2>
-        <p class="text-ivory/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 font-light leading-relaxed">
-          Temukan desain undangan yang sesuai dengan momen spesialmu bersama Momen Bareng. Konsultasikan ide dan tema acaramu tanpa biaya.
+        <p
+          class="text-ivory/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 font-light leading-relaxed">
+          Temukan desain undangan yang sesuai dengan momen spesialmu bersama Momen Bareng. Konsultasikan ide dan tema
+          acaramu tanpa biaya.
         </p>
-        
+
         <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
-          <button class="inline-flex items-center justify-center gap-3 bg-muted-gold text-deep-brown hover:bg-muted-gold/90 px-8 sm:px-9 py-3.5 sm:py-4 rounded-full text-xs uppercase tracking-widest font-bold transition-all shadow-lg hover:shadow-xl active:scale-95" data-wa-trigger="Halo Momen Bareng, saya ingin mulai konsultasi pembuatan undangan digital untuk acara saya.">
+          <button
+            class="inline-flex items-center justify-center gap-3 bg-muted-gold text-deep-brown hover:bg-muted-gold/90 px-8 sm:px-9 py-3.5 sm:py-4 rounded-full text-xs uppercase tracking-widest font-bold transition-all shadow-lg hover:shadow-xl active:scale-95"
+            data-wa-trigger="Halo Momen Bareng, saya ingin mulai konsultasi pembuatan undangan digital untuk acara saya.">
             <i class="w-4 h-4" data-lucide="message-circle"></i>
             <span>Mulai Konsultasi</span>
           </button>
-          <a class="inline-flex items-center justify-center gap-2 border border-ivory/30 hover:border-ivory text-ivory px-7 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs uppercase tracking-widest font-semibold hover:bg-white/5 transition-all text-center" href="#koleksi">
+          <a class="inline-flex items-center justify-center gap-2 border border-ivory/30 hover:border-ivory text-ivory px-7 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs uppercase tracking-widest font-semibold hover:bg-white/5 transition-all text-center"
+            href="#koleksi">
             <span>Lihat Contoh Desain</span>
             <i class="w-4 h-4" data-lucide="arrow-right"></i>
           </a>
@@ -1036,18 +1348,21 @@
   <!-- ==================== K. FOOTER ==================== -->
   <footer class="bg-ivory border-t border-subtle-border pt-12 sm:pt-16 pb-10 sm:pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-10 sm:pb-12 border-b border-subtle-border">
-        
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-10 sm:pb-12 border-b border-subtle-border">
+
         <!-- Brand Info (5 cols) -->
         <div class="sm:col-span-2 lg:col-span-5 space-y-3 sm:space-y-4">
           <a class="flex items-center gap-2.5" href="#beranda">
-            <div class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-muted-gold border border-muted-gold/30">
+            <div
+              class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-muted-gold border border-muted-gold/30">
               <i class="w-4 h-4" data-lucide="sparkles"></i>
             </div>
             <span class="font-serif text-2xl font-bold tracking-tight text-deep-brown">momen bareng</span>
           </a>
           <p class="text-deep-brown/70 text-xs sm:text-sm leading-relaxed max-w-sm font-light">
-            Platform jasa pembuatan undangan digital elegan dan personal untuk pernikahan, lamaran, ulang tahun, aqiqah, dan perayaan istimewa Anda.
+            Platform jasa pembuatan undangan digital elegan dan personal untuk pernikahan, lamaran, ulang tahun, aqiqah,
+            dan perayaan istimewa Anda.
           </p>
           <p class="italic font-serif text-xs sm:text-sm text-deep-brown/60">
             “Setiap Momen Punya Cerita, Rayakan Bareng Momen Bareng.”
@@ -1059,10 +1374,12 @@
           <p class="text-xs uppercase tracking-widest font-bold text-deep-brown">Navigasi</p>
           <ul class="space-y-2 text-xs sm:text-sm text-deep-brown/75 font-light">
             <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#beranda">Beranda</a></li>
-            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#tentang-kami">Tentang Kami</a></li>
+            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#tentang-kami">Tentang Kami</a>
+            </li>
             <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Layanan</a></li>
             <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#koleksi">Koleksi Desain</a></li>
-            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#cara-pemesanan">Cara Pemesanan</a></li>
+            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#cara-pemesanan">Cara
+                Pemesanan</a></li>
           </ul>
         </div>
 
@@ -1070,11 +1387,15 @@
         <div class="lg:col-span-2 space-y-3">
           <p class="text-xs uppercase tracking-widest font-bold text-deep-brown">Layanan</p>
           <ul class="space-y-2 text-xs sm:text-sm text-deep-brown/75 font-light">
-            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Pernikahan</a></li>
-            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Lamaran</a></li>
-            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Ulang Tahun</a></li>
+            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Pernikahan</a>
+            </li>
+            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Lamaran</a>
+            </li>
+            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Ulang Tahun</a>
+            </li>
             <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Aqiqah</a></li>
-            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Khitanan</a></li>
+            <li><a class="hover:text-dusty-rose transition-colors py-0.5 block" href="#layanan">Undangan Khitanan</a>
+            </li>
           </ul>
         </div>
 
@@ -1088,20 +1409,26 @@
             </p>
             <p class="flex items-center gap-2">
               <i class="w-4 h-4 text-muted-gold flex-shrink-0" data-lucide="mail"></i>
-              <span>Email: halo@momenbareng.com</span>
+              <span>Email: Kelompok3@gmail.com</span>
             </p>
           </div>
-          
+
           <div class="pt-2">
             <p class="text-xs uppercase tracking-widest font-bold text-deep-brown mb-2">Media Sosial</p>
             <div class="flex items-center gap-2.5 sm:gap-3">
-              <a aria-label="Instagram Momen Bareng" class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-deep-brown hover:bg-dusty-rose hover:text-white transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+              <a aria-label="Instagram Momen Bareng"
+                class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-deep-brown hover:bg-dusty-rose hover:text-white transition-colors"
+                href="https://instagram.com" rel="noopener noreferrer" target="_blank">
                 <i class="w-4 h-4" data-lucide="instagram"></i>
               </a>
-              <a aria-label="TikTok Momen Bareng" class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-deep-brown hover:bg-dusty-rose hover:text-white transition-colors" href="https://tiktok.com" rel="noopener noreferrer" target="_blank">
+              <a aria-label="TikTok Momen Bareng"
+                class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-deep-brown hover:bg-dusty-rose hover:text-white transition-colors"
+                href="https://tiktok.com" rel="noopener noreferrer" target="_blank">
                 <i class="w-4 h-4" data-lucide="video"></i>
               </a>
-              <a aria-label="Facebook Momen Bareng" class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-deep-brown hover:bg-dusty-rose hover:text-white transition-colors" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+              <a aria-label="Facebook Momen Bareng"
+                class="w-8 h-8 rounded-full bg-soft-beige flex items-center justify-center text-deep-brown hover:bg-dusty-rose hover:text-white transition-colors"
+                href="https://facebook.com" rel="noopener noreferrer" target="_blank">
                 <i class="w-4 h-4" data-lucide="facebook"></i>
               </a>
             </div>
@@ -1111,28 +1438,38 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-deep-brown/60 gap-3 text-center sm:text-left">
-        <p>© <span id="current-year"></span> Momen Bareng. Seluruh hak cipta dilindungi undang-undang.</p>
-        <p class="font-light">Dibuat dengan rasa cinta untuk merayakan setiap cerita berharga.</p>
+      <div
+        class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-deep-brown/60 gap-3 text-center sm:text-left">
+        <p>© <span id="current-year"></span> KELOMPOK 3.</p>
+        <!-- <p class="font-light">Dibuat dengan rasa cinta untuk merayakan setiap cerita berharga.</p> -->
       </div>
     </div>
   </footer>
 
   <!-- ==================== MODAL PREVIEW DESAIN ==================== -->
-  <div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-6 bg-deep-brown/60 backdrop-blur-sm" id="preview-modal" role="dialog">
-    <div class="bg-ivory rounded-2xl sm:rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-subtle-border relative flex flex-col max-h-[92vh]">
+  <div aria-labelledby="modal-title" aria-modal="true"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-6 bg-deep-brown/60 backdrop-blur-sm"
+    id="preview-modal" role="dialog">
+    <div
+      class="bg-ivory rounded-2xl sm:rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-subtle-border relative flex flex-col max-h-[92vh]">
       <!-- Close Button -->
-      <button aria-label="Tutup preview" class="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-ivory/80 backdrop-blur-md text-deep-brown hover:bg-deep-brown hover:text-ivory flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold shadow-sm" id="modal-close-btn">
+      <button aria-label="Tutup preview"
+        class="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 w-8 sm:w-9 h-8 sm:h-9 rounded-full bg-ivory/80 backdrop-blur-md text-deep-brown hover:bg-deep-brown hover:text-ivory flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold shadow-sm"
+        id="modal-close-btn">
         <i class="w-4 sm:w-5 h-4 sm:h-5" data-lucide="x"></i>
       </button>
 
       <!-- Modal Image Screen -->
       <div class="relative aspect-video sm:aspect-[16/10] bg-soft-beige overflow-hidden flex-shrink-0">
-        <img alt="Pratinjau Desain Undangan" class="w-full h-full object-cover" id="modal-img" src=""/>
-        <div class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent flex items-end p-4 sm:p-6">
+        <img alt="Pratinjau Desain Undangan" class="w-full h-full object-cover" id="modal-img" src="" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-deep-brown/80 via-transparent to-transparent flex items-end p-4 sm:p-6">
           <div>
-            <span class="bg-ivory/90 text-deep-brown text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider px-2.5 sm:px-3 py-1 rounded-full shadow-sm" id="modal-badge">Kategori</span>
-            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1.5 sm:mt-2" id="modal-title">Nama Template</h3>
+            <span
+              class="bg-ivory/90 text-deep-brown text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider px-2.5 sm:px-3 py-1 rounded-full shadow-sm"
+              id="modal-badge">Kategori</span>
+            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1.5 sm:mt-2" id="modal-title">Nama
+              Template</h3>
           </div>
         </div>
       </div>
@@ -1145,10 +1482,13 @@
             Deskripsi lengkap desain akan tampil di sini.
           </p>
         </div>
-        
-        <div class="pt-4 border-t border-subtle-border flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+
+        <div
+          class="pt-4 border-t border-subtle-border flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
           <p class="text-xs text-deep-brown/60 text-center sm:text-left">Tertarik dengan konsep template ini?</p>
-          <button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-6 py-2.5 sm:py-3 rounded-full text-xs uppercase tracking-wider font-semibold transition-all active:scale-95" id="modal-wa-btn">
+          <button
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-deep-brown text-ivory hover:bg-deep-brown/90 px-6 py-2.5 sm:py-3 rounded-full text-xs uppercase tracking-wider font-semibold transition-all active:scale-95"
+            id="modal-wa-btn">
             <i class="w-4 h-4 text-muted-gold" data-lucide="message-circle"></i>
             <span>Pesan Desain Ini</span>
           </button>
@@ -1158,11 +1498,14 @@
   </div>
 
   <!-- ==================== BACK TO TOP BUTTON ==================== -->
-  <button aria-label="Kembali ke atas" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 hidden p-2.5 sm:p-3 rounded-full bg-ivory text-deep-brown shadow-hover-card border border-subtle-border hover:bg-deep-brown hover:text-ivory transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold" id="back-to-top">
+  <button aria-label="Kembali ke atas"
+    class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 hidden p-2.5 sm:p-3 rounded-full bg-ivory text-deep-brown shadow-hover-card border border-subtle-border hover:bg-deep-brown hover:text-ivory transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-muted-gold"
+    id="back-to-top">
     <i class="w-5 h-5" data-lucide="arrow-up"></i>
   </button>
 
   <!-- ==================== EXTERNAL JAVASCRIPT ==================== -->
   <script src="script.js" defer></script>
 </body>
+
 </html>
